@@ -128,3 +128,11 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Opinionated list of files to ignore
+package-lock.json
+
+# Source control related ignores
+.vscode
+.idea
+*.iml
