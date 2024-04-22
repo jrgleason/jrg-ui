@@ -1,0 +1,23 @@
+{
+  "name": "@jrg/jrg-ui",
+  "version": "0.0.1",
+  "description": "This is hopefully me moving forward on my person site update",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrgleason/jrg-ui.git"
+  },
+  "keywords": [
+    "personal",
+    "site"
+  ],
+  "author": "Jackie Gleason (partyk1d24)",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/jrgleason/jrg-ui/issues"
+  },
+  "homepage": "https://github.com/jrgleason/jrg-ui#readme"
+}
