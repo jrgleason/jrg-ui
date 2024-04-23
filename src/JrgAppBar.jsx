@@ -20,7 +20,10 @@ function JrgAppBar() {
                     alignItems: 'center',
                 }}>
                     <Box sx={{
-                        width: '14vw'
+                        width: '14vw',
+                        '@media (max-width:650px)': {
+                            display: 'none',
+                        }
                     }}></Box>
                     <Typography
                         variant="h4"
