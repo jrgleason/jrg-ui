@@ -35,6 +35,7 @@ function JrgAppBar() {
                 <Button
                     size="large"
                     sx={{mr: 2}}
+                    href={"https://docs.google.com/document/d/1xrqve90hloOYGR3RSCvwXJBXq_NQR5kmNfrxKYSveKk/edit?usp=sharing"}
                     color="inherit">Résumé</Button>
                 <Box>
                     <IconButton
