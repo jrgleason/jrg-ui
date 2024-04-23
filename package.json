@@ -25,13 +25,18 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "latest",
-    "eslint-config-google": "latest"
+    "eslint-config-google": "latest",
+    "react-scripts": "latest"
   },
   "dependencies": {
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@mui/material": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-scripts": "latest",
-    "web-vitals": "latest"
+    "web-vitals": "latest",
+    "@fortawesome/free-brands-svg-icons": "latest",
+    "@fortawesome/react-fontawesome": "latest"
   },
   "browserslist": {
     "production": [
