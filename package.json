@@ -36,6 +36,7 @@
     "react-dom": "latest",
     "web-vitals": "latest",
     "@fortawesome/free-brands-svg-icons": "latest",
+    "@fortawesome/free-solid-svg-icons": "latest",
     "@fortawesome/react-fontawesome": "latest"
   },
   "browserslist": {

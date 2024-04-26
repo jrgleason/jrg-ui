@@ -4,9 +4,19 @@ import Page from "./Page";
 
 function App() {
     return (
-        <div className="App">
+        <div className="App" style={{
+            overflow: 'hidden',
+        }}>
             <JrgAppBar/>
-            <Page/>
+            <Page sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: '100vh',
+                backgroundColor: 'black',
+                color: 'white',
+            }}/>
         </div>
     );
 }

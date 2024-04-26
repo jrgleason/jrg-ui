@@ -3,6 +3,7 @@ body, html, #root {
     padding: 0;
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
 .App {
     height: 100%;
