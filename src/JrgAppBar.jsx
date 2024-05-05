@@ -1,8 +1,7 @@
 import {AppBar, Box, Button, Drawer, IconButton, Toolbar, Typography} from "@mui/material";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
-import React, { useState } from "react";
-import {faBars} from '@fortawesome/free-solid-svg-icons';
+import React, {useState} from "react";
 
 function JrgAppBar() {
     const [open, setOpen] = useState(false);
@@ -13,20 +12,21 @@ function JrgAppBar() {
                 sx={{
                     backdropFilter: "blur(10px)", // Add this line
                     backgroundColor: 'rgba(255, 36, 0, 0.5)', // And this line
+                    color: 'silver'
                 }}
             >
                 <Toolbar>
-                    <IconButton
-                        size="large"
-                        edge="start"
-                        color="inherit"
-                        aria-label="menu"
-                        style={{ visibility: 'hidden' }}
-                        sx={{mr: 2}}
-                        onClick={() => setOpen(true)}
-                    >
-                        <FontAwesomeIcon icon={faBars}/>
-                    </IconButton>
+                    {/*<IconButton*/}
+                    {/*    size="large"*/}
+                    {/*    edge="start"*/}
+                    {/*    color="inherit"*/}
+                    {/*    aria-label="menu"*/}
+                    {/*    style={{ visibility: 'hidden' }}*/}
+                    {/*    sx={{mr: 2}}*/}
+                    {/*    onClick={() => setOpen(true)}*/}
+                    {/*>*/}
+                    {/*    <FontAwesomeIcon icon={faBars}/>*/}
+                    {/*</IconButton>*/}
                     <Box sx={{
                         flexGrow: 1,
                         display: 'flex',
@@ -40,7 +40,7 @@ function JrgAppBar() {
                             }
                         }}></Box>
                         <Typography
-                            variant="h5"
+                            variant="h6"
                             component="div">
                             The Jackie Gleason
                         </Typography>
