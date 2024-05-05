@@ -1,6 +1,6 @@
 import {Box, Typography} from "@mui/material";
 import {styled} from "@mui/system";
-import {faJava, faMicrosoft, faPython} from "@fortawesome/free-brands-svg-icons";
+import {faAws, faGoogle, faJava, faMicrosoft, faPython} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faMicrochip} from "@fortawesome/free-solid-svg-icons";
 
@@ -74,7 +74,7 @@ function WhatIDo() {
         <StyledOuterBox minHeight={"40vh"}>
             <IconBox icon1={faJava} icon2={faMicrosoft} text="Expert Developer"/>
             <IconBox icon1={faMicrochip} icon2={faPython} text="AI Guru"/>
-            <IconBox icon1={faMicrochip} icon2={faPython} text="Cloud Master"/>
+            <IconBox icon1={faAws} icon2={faGoogle} text="Cloud Master"/>
         </StyledOuterBox>
     );
 }
