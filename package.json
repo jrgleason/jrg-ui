@@ -31,14 +31,15 @@
   "dependencies": {
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
+    "@fortawesome/free-brands-svg-icons": "latest",
+    "@fortawesome/free-solid-svg-icons": "latest",
+    "@fortawesome/react-fontawesome": "latest",
+    "@googleapis/docs": "latest",
     "@mui/material": "latest",
     "react": "latest",
     "react-dom": "latest",
     "react-router-dom": "latest",
-    "web-vitals": "latest",
-    "@fortawesome/free-brands-svg-icons": "latest",
-    "@fortawesome/free-solid-svg-icons": "latest",
-    "@fortawesome/react-fontawesome": "latest"
+    "web-vitals": "latest"
   },
   "browserslist": {
     "production": [

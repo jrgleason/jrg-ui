@@ -53,9 +53,9 @@ function CenteredBox({children, border = true}) {
     );
 }
 
-function IconBox({icon1, icon2, text}) {
+function IconBox({icon1, icon2, text, border=true}) {
     return (
-        <CenteredBox>
+        <CenteredBox border={border}>
             <Box sx={{display: 'flex'}}>
                 <Box sx={{padding: '8px'}}>
                     <FontAwesomeIcon size="3x" icon={icon1}/>
@@ -74,7 +74,7 @@ function WhatIDo() {
         <StyledOuterBox minHeight={"40vh"}>
             <IconBox icon1={faJava} icon2={faMicrosoft} text="Expert Developer"/>
             <IconBox icon1={faMicrochip} icon2={faPython} text="AI Guru"/>
-            <IconBox icon1={faAws} icon2={faGoogle} text="Cloud Master"/>
+            <IconBox icon1={faAws} icon2={faGoogle} text="Cloud Master" border={false}/>
         </StyledOuterBox>
     );
 }

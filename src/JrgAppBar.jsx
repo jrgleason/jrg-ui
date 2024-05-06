@@ -2,6 +2,7 @@ import {AppBar, Box, Button, Drawer, IconButton, Toolbar, Typography} from "@mui
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
 import React, {useState} from "react";
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
 function JrgAppBar() {
     const [open, setOpen] = useState(false);
@@ -12,7 +13,7 @@ function JrgAppBar() {
                 sx={{
                     backdropFilter: "blur(10px)", // Add this line
                     backgroundColor: 'rgba(255, 36, 0, 0.5)', // And this line
-                    color: 'silver'
+                    color: "#C0C0C0"
                 }}
             >
                 <Toolbar>
@@ -51,29 +52,19 @@ function JrgAppBar() {
                         sx={{mr: 2}}
                         href={"https://docs.google.com/document/d/1xrqve90hloOYGR3RSCvwXJBXq_NQR5kmNfrxKYSveKk/edit?usp=sharing"}
                         color="inherit">Résumé</Button>
-                    <Box>
-                        <IconButton
-                            size="large"
-                            edge="start"
-                            color="inherit"
-                            aria-label="menu"
-                            sx={{mr: 2}}
-                        >
-                            <FontAwesomeIcon
-                                icon={faLinkedinIn}/>
-                        </IconButton>
-                        <IconButton
-                            size="large"
-                            edge="start"
-                            color="inherit"
-                            aria-label="menu"
-                            sx={{mr: 2}}
-                        >
-                            <FontAwesomeIcon
-                                size="lg"
-                                icon={faGithub}/>
-                        </IconButton>
-                    </Box>
+                    <IconButton
+                        size="large"
+                        color="primary"
+                        target="_top"
+                        rel="noopener noreferrer"
+                        href={`mailto:jackiegleason+jrgsite@gmail.com`}
+                    >
+                        <FontAwesomeIcon
+                            color="#C0C0C0"
+                            icon={faEnvelope}>
+
+                        </FontAwesomeIcon>
+                    </IconButton>
                 </Toolbar>
             </AppBar>
             <Drawer open={open} anchor="right" onClose={() => setOpen(false)}>
