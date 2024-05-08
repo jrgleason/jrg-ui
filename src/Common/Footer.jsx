@@ -2,8 +2,9 @@ import {Box, IconButton, Typography} from "@mui/material";
 import { useTheme } from '@mui/material/styles';
 import {styled} from "@mui/system";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faGithub, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
+import {faGithub, faLinkedinIn, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import React from "react";
+import {faCopyright} from "@fortawesome/free-solid-svg-icons";
 
 const FooterBox = styled(Box)(({theme, minHeight = '25vh'}) => ({
     display: 'flex',
@@ -27,14 +28,16 @@ function Footer() {
                 display:"flex",
                 flexDirection: "column"
             }}>
-                <Box>
-
-                    <Typography></Typography>
-                </Box>
-                <Box>
+                <Box
+                    sx={{
+                        display: "flex",
+                        justifyContent: "end",
+                    }}
+                >
                     <IconButton
                         size="small"
                         color={theme.palette.primary.contrastText}
+                        href={"https://www.linkedin.com/in/jackie-gleason-5a52114/"}
                     >
                         <FontAwesomeIcon
                             color={theme.palette.primary.contrastText}
@@ -42,12 +45,34 @@ function Footer() {
                     </IconButton>
                     <IconButton
                         size="small"
+                        href={"https://github.com/jrgleason"}
                     >
                         <FontAwesomeIcon
                             size="lg"
                             color={theme.palette.primary.contrastText}
                             icon={faGithub}/>
                     </IconButton>
+                    <IconButton
+                        size="small"
+                        href={"https://www.youtube.com/channel/UCKb_hAmgdktghrRmJ9QPfGA"}
+                    >
+                        <FontAwesomeIcon
+                            size="lg"
+                            color={theme.palette.primary.contrastText}
+
+                            icon={faYoutube}/>
+                    </IconButton>
+                </Box>
+                <Box sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                }}>
+                    <FontAwesomeIcon
+                        icon={faCopyright}
+                        style={{ paddingRight: '13px' }}
+                    />
+                    <Typography>Jackie Gleason 2002-2024</Typography>
                 </Box>
             </Box>
 

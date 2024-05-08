@@ -17,17 +17,6 @@ function JrgAppBar() {
                 }}
             >
                 <Toolbar>
-                    {/*<IconButton*/}
-                    {/*    size="large"*/}
-                    {/*    edge="start"*/}
-                    {/*    color="inherit"*/}
-                    {/*    aria-label="menu"*/}
-                    {/*    style={{ visibility: 'hidden' }}*/}
-                    {/*    sx={{mr: 2}}*/}
-                    {/*    onClick={() => setOpen(true)}*/}
-                    {/*>*/}
-                    {/*    <FontAwesomeIcon icon={faBars}/>*/}
-                    {/*</IconButton>*/}
                     <Box sx={{
                         flexGrow: 1,
                         display: 'flex',
