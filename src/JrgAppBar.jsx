@@ -3,6 +3,13 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
 import React, {useState} from "react";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import {styled} from "@mui/system";
+
+const Title = styled(Typography)(({theme}) => ({
+    [theme.breakpoints.down('sm')]: {
+        fontSize: `calc(${theme.typography.h6.fontSize} * 0.75)`, // font size for small screens
+    },
+}));
 
 function JrgAppBar() {
     const [open, setOpen] = useState(false);
@@ -29,11 +36,11 @@ function JrgAppBar() {
                                 display: 'none',
                             }
                         }}></Box>
-                        <Typography
+                        <Title
                             variant="h6"
                             component="div">
                             The Jackie Gleason
-                        </Typography>
+                        </Title>
                     </Box>
 
                     <Button

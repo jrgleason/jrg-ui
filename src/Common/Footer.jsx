@@ -15,8 +15,8 @@ const FooterBox = styled(Box)(({theme, minHeight = '25vh'}) => ({
     backgroundColor: theme.palette.primary.main,
     justifyContent: 'flex-end', // Add this line
     [theme.breakpoints.down('sm')]: {
-        minHeight: '100vh',
         flexDirection: 'column',
+        alignItems: 'center'
     },
 }));
 
@@ -32,6 +32,10 @@ function Footer() {
                     sx={{
                         display: "flex",
                         justifyContent: "end",
+                        [theme.breakpoints.down('sm')]: {
+                            alignItems: "center",
+                            justifyContent: "center"
+                        },
                     }}
                 >
                     <IconButton

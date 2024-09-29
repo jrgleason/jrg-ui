@@ -17,32 +17,51 @@ const StyledSplashBox = styled(Box)({
 });
 
 const StyledMarketingBox = styled(Box)(({theme}) => ({
-    height: '70%',
     flexGrow: 1,
     marginTop: '55px',
     padding: '10px',
     borderRadius: '20px',
     maxHeight: '300px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
     backgroundColor: `${theme.palette.primary.main}CC`,
+    overflow: 'hidden',
+    [theme.breakpoints.down('sm')]: {
+        minHeight: '0',
+        marginLeft: '10px',
+        marginRight: '10px',
+        maxWidth: '90%'
+    },
 }));
 
-const StyledTypography = styled(Typography)(({theme}) => ({
+const Header = styled(Typography)(({theme}) => ({
     color: theme.palette.primary.contrastText,
     flexGrow: 1,
     textAlign: 'center',
     padding: '25px',
+    [theme.breakpoints.down('sm')]: {
+        fontSize: `calc(${theme.typography.h1.fontSize} * 0.5)`, // font size for small screens
+    },
+}));
+const Subheader = styled(Header)(({theme}) => ({
+    [theme.breakpoints.down('sm')]: {
+        fontSize: `calc(${theme.typography.h3.fontSize} * 0.5)`, // different font size for small screens
+        // Add your additional styles for small screens here
+    },
 }));
 
 function MarketingSplash() {
     return (
         <StyledSplashBox className={"splash"}>
             <StyledMarketingBox className={"marketing"}>
-                <StyledTypography variant="h1" component="div">
+                <Header variant="h1" component="div">
                     Welcome!
-                </StyledTypography>
-                <StyledTypography variant="h3" component="div">
+                </Header>
+                <Subheader variant="h3" component="div">
                     Columbus's Premier Developer
-                </StyledTypography>
+                </Subheader>
             </StyledMarketingBox>
             <Box sx={{minHeight: '8px', flex: 1}}></Box>
             <Box

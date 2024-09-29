@@ -38,7 +38,7 @@ const StyledBox = styled(Box)(
             backgroundColor: theme.palette.primary.contrastText,
         },
         [theme.breakpoints.down('sm')]: {
-            minHeight: '100vh',
+            minHeight: '0',
             '&::after': {
                 display: 'none',
             },
