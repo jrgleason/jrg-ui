@@ -4,11 +4,10 @@
   "description": "This is hopefully me moving forward on my person site update",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build:upload": "react-scripts --openssl-legacy-provider build && cp -R build/ ~/aws-dir",
-    "build": "react-scripts --openssl-legacy-provider build",
-    "test": "react-scripts test --coverage --watchAll=false --transformIgnorePatterns 'node_modules/(?!axios)/'",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -25,8 +24,10 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "latest",
+    "@vitejs/plugin-react": "latest",
     "eslint-config-google": "latest",
-    "react-scripts": "latest"
+    "vite": "latest",
+    "vite-plugin-sitemap": "^0.7.1"
   },
   "dependencies": {
     "@emotion/react": "latest",
